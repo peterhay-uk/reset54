@@ -25,7 +25,7 @@ const ContactSection = () => {
         </a>
 
         <p className="mt-8 text-sm text-primary-foreground/50">
-          I aim to respond within a day or two.
+          I aim to respond within 24 hours.
         </p>
       </div>
     </section>
