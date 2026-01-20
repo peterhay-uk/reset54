@@ -33,7 +33,7 @@ const Header = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Your Name
+          Reset54
         </a>
         <nav className="flex items-center gap-8">
           <button
