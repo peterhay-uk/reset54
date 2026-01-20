@@ -6,47 +6,47 @@
 
 /* 
   Design System: Editorial Consultancy
-  Palette: Deep slate, warm cream, subtle amber
-  Tone: Calm, precise, confident
+  Palette: Vibrant teal, coral accent, warm white
+  Tone: Bold, modern, energetic yet professional
 */
 
 @layer base {
   :root {
-    /* Warm cream background */
-    --background: 40 30% 97%;
-    --foreground: 220 25% 18%;
+    /* Clean white background */
+    --background: 180 15% 98%;
+    --foreground: 200 40% 15%;
 
-    /* Cards slightly warmer */
-    --card: 40 25% 95%;
-    --card-foreground: 220 25% 18%;
+    /* Cards with subtle warmth */
+    --card: 180 12% 96%;
+    --card-foreground: 200 40% 15%;
 
-    --popover: 40 25% 95%;
-    --popover-foreground: 220 25% 18%;
+    --popover: 180 12% 96%;
+    --popover-foreground: 200 40% 15%;
 
-    /* Deep slate primary - authority */
-    --primary: 220 25% 22%;
-    --primary-foreground: 40 30% 97%;
+    /* Rich teal primary - confident & modern */
+    --primary: 175 65% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Soft muted secondary */
-    --secondary: 40 15% 90%;
-    --secondary-foreground: 220 20% 30%;
+    /* Light teal secondary */
+    --secondary: 175 30% 90%;
+    --secondary-foreground: 175 65% 25%;
 
     /* Muted tones */
-    --muted: 40 12% 88%;
-    --muted-foreground: 220 12% 45%;
+    --muted: 180 15% 92%;
+    --muted-foreground: 200 20% 40%;
 
-    /* Warm amber accent - approachability */
-    --accent: 32 75% 55%;
-    --accent-foreground: 220 25% 18%;
+    /* Vibrant coral accent - energy & warmth */
+    --accent: 12 85% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 65% 50%;
-    --destructive-foreground: 40 30% 97%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 40 15% 85%;
-    --input: 40 15% 85%;
-    --ring: 32 75% 55%;
+    --border: 180 15% 88%;
+    --input: 180 15% 88%;
+    --ring: 12 85% 60%;
 
-    --radius: 0.375rem;
+    --radius: 0.5rem;
 
     /* Typography */
     --font-serif: 'Instrument Serif', Georgia, serif;
@@ -57,53 +57,53 @@
     --content-max-width: 720px;
 
     /* Sidebar tokens (keeping for compatibility) */
-    --sidebar-background: 40 25% 95%;
-    --sidebar-foreground: 220 25% 18%;
-    --sidebar-primary: 220 25% 22%;
-    --sidebar-primary-foreground: 40 30% 97%;
-    --sidebar-accent: 32 75% 55%;
-    --sidebar-accent-foreground: 220 25% 18%;
-    --sidebar-border: 40 15% 85%;
-    --sidebar-ring: 32 75% 55%;
+    --sidebar-background: 175 30% 95%;
+    --sidebar-foreground: 200 40% 15%;
+    --sidebar-primary: 175 65% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 12 85% 60%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 180 15% 88%;
+    --sidebar-ring: 12 85% 60%;
   }
 
   .dark {
-    --background: 220 25% 10%;
-    --foreground: 40 20% 92%;
+    --background: 200 35% 8%;
+    --foreground: 180 15% 95%;
 
-    --card: 220 22% 14%;
-    --card-foreground: 40 20% 92%;
+    --card: 200 30% 12%;
+    --card-foreground: 180 15% 95%;
 
-    --popover: 220 22% 14%;
-    --popover-foreground: 40 20% 92%;
+    --popover: 200 30% 12%;
+    --popover-foreground: 180 15% 95%;
 
-    --primary: 40 20% 92%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 175 55% 45%;
+    --primary-foreground: 200 35% 8%;
 
-    --secondary: 220 18% 20%;
-    --secondary-foreground: 40 15% 85%;
+    --secondary: 200 25% 18%;
+    --secondary-foreground: 175 40% 80%;
 
-    --muted: 220 15% 22%;
-    --muted-foreground: 40 10% 60%;
+    --muted: 200 20% 16%;
+    --muted-foreground: 180 12% 55%;
 
-    --accent: 32 70% 50%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 12 80% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 60% 45%;
-    --destructive-foreground: 40 20% 92%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 180 15% 95%;
 
-    --border: 220 18% 22%;
-    --input: 220 18% 22%;
-    --ring: 32 70% 50%;
+    --border: 200 20% 18%;
+    --input: 200 20% 18%;
+    --ring: 12 80% 55%;
 
-    --sidebar-background: 220 22% 12%;
-    --sidebar-foreground: 40 20% 92%;
-    --sidebar-primary: 32 70% 50%;
-    --sidebar-primary-foreground: 220 25% 10%;
-    --sidebar-accent: 220 18% 20%;
-    --sidebar-accent-foreground: 40 20% 92%;
-    --sidebar-border: 220 18% 22%;
-    --sidebar-ring: 32 70% 50%;
+    --sidebar-background: 200 30% 10%;
+    --sidebar-foreground: 180 15% 95%;
+    --sidebar-primary: 175 55% 45%;
+    --sidebar-primary-foreground: 200 35% 8%;
+    --sidebar-accent: 200 25% 18%;
+    --sidebar-accent-foreground: 180 15% 95%;
+    --sidebar-border: 200 20% 18%;
+    --sidebar-ring: 12 80% 55%;
   }
 }
 
