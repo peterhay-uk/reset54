@@ -17,11 +17,11 @@ const ContactSection = () => {
         </p>
 
         <a
-          href="mailto:hello@example.com"
+          href="mailto:peter@reset54.com"
           className="inline-flex items-center gap-3 px-8 py-4 bg-primary-foreground text-primary rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
         >
           <Mail className="w-5 h-5" />
-          hello@example.com
+          peter@reset54.com
         </a>
 
         <p className="mt-8 text-sm text-primary-foreground/50">
