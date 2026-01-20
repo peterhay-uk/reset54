@@ -7,7 +7,7 @@ const AboutSection = () => {
         </span>
         
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-10 text-balance">
-          Twenty years of working with leaders facing complex problems.
+          Two decades of working with leaders facing complex problems.
         </h2>
         
         <div className="prose-editorial space-y-6">
