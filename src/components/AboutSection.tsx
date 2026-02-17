@@ -11,8 +11,8 @@ const AboutSection = () => {
         </h2>
         
         <div className="prose-editorial space-y-6">
-          <p>
-            I've spent two decades helping senior leaders in established organisations navigate the messiness that comes with trying to do something meaningful. Product launches that stalled. Teams that lost their way. Strategies that looked right on paper but felt wrong in practice.
+          <p>I've spent two decades helping senior leaders in established organisations navigate the messiness that comes with trying to do something impactful. Product launches that stalled. Teams that lost their way. Strategies that looked right on paper but felt wrong in practice.
+
           </p>
           
           <p>
@@ -30,8 +30,8 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;
