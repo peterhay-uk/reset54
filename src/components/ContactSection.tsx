@@ -21,7 +21,7 @@ const ContactSection = () => {
           className="inline-flex items-center gap-3 px-8 py-4 bg-primary-foreground text-primary rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-300" href="mailto:peter.hay@reset54.co.uk">
 
           <Mail className="w-5 h-5" />
-          peter@reset54.com
+          peter.hay@reset54.co.uk
         </a>
 
         <p className="mt-8 text-sm text-primary-foreground/50">
