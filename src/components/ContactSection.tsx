@@ -13,13 +13,13 @@ const ContactSection = () => {
         </h2>
 
         <p className="text-lg text-primary-foreground/80 max-w-lg mx-auto mb-10">
-          A first conversation is just that—a chance to understand each other and see if there's a fit. No pressure, no sales pitch.
+          A first conversation is just that, a chance to understand each other and see if there's a fit. No pressure,no sales pitch.
         </p>
 
         <a
           href="mailto:peter@reset54.com"
-          className="inline-flex items-center gap-3 px-8 py-4 bg-primary-foreground text-primary rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
-        >
+          className="inline-flex items-center gap-3 px-8 py-4 bg-primary-foreground text-primary rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-300">
+
           <Mail className="w-5 h-5" />
           peter@reset54.com
         </a>
@@ -28,8 +28,8 @@ const ContactSection = () => {
           I will respond within 24 hours.
         </p>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;
