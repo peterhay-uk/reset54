@@ -1,3 +1,11 @@
+import RotatingText from "./RotatingText";
+
+const HERO_CAPTIONS = [
+  "Sense-making across complexity",
+  "Clarity over noise",
+  "Progress over theatre",
+];
+
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
@@ -13,7 +21,12 @@ const HeroSection = () => {
         </h1>
         
         <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2">
-          Sense-making across complexity. Clarity over noise. Progress over theatre.
+          <RotatingText
+            captions={HERO_CAPTIONS}
+            interval={3500}
+            fadeDuration={500}
+            showUnderline
+          />
         </p>
         
         <div className="mt-12 flex items-center justify-center gap-4 animate-fade-up-delay-2">
