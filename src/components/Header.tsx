@@ -42,6 +42,12 @@ const Header = () => {
         </a>
         <nav className="flex items-center gap-8">
           <button
+            onClick={() => scrollToSection("clients")}
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
+          >
+            Previously worked with
+          </button>
+          <button
             onClick={() => scrollToSection("about")}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
           >
@@ -51,17 +57,11 @@ const Header = () => {
             onClick={() => scrollToSection("work")}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
           >
-            How I Help
-          </button>
-          <button
-            onClick={() => scrollToSection("clients")}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
-          >
-            Previous Clients
+            Where I Can Be Most Useful
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
           >
             Get in Touch
           </button>

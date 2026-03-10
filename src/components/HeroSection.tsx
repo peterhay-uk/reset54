@@ -12,16 +12,16 @@ const HeroSection = () => {
       <div className="content-width text-center">
         <div className="animate-fade-up">
           <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-6">
-            Strategic Advisory
+            Independent Strategic Advisory
           </span>
         </div>
         
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground text-balance leading-[1.1] animate-fade-up-delay">
-          I help senior leaders reset direction when pushing harder no longer works
+          Helping senior leaders reset direction when pushing harder no longer works
         </h1>
         
         <p className="font-serif text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mt-6 animate-fade-up-delay">
-          Untangling stalled products, teams, and strategies
+          Untangling stalled products, teams, and strategy
         </p>
         
         <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>

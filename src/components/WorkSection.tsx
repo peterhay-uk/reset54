@@ -3,24 +3,24 @@ import { ArrowRight } from "lucide-react";
 const WorkSection = () => {
   const approaches = [
   {
-    title: "Making sense of what's happening",
+    title: "When the problem is not yet clear",
     description:
-    "When the diagnosis isn't clear, I help leaders understand what they're really dealing with—beyond the surface symptoms."
+    "Clarity on what is really happening beneath the surface"
   },
   {
-    title: "Resetting direction",
+    title: "When direction feels uncertain",
     description:
-    "Not a new strategy deck. A clearer sense of what actually matters and what can be let go."
+    "A clearer sense of what matters and where to focus next"
   },
   {
-    title: "Building momentum differently",
+    title: "When teams are working hard but progress is slow",
     description:
-    "Finding ways to make progress that don't rely on pushing harder or hiring more people."
+    "Momentum restored without increasing pressure"
   },
   {
-    title: "Thinking through complexity",
+    title: "When the situation is genuinely complex",
     description:
-    "Some problems don't have clean solutions. I help leaders hold ambiguity without getting paralysed."
+    "Thoughtful decisions made with greater confidence"
   }];
 
 
@@ -28,16 +28,16 @@ const WorkSection = () => {
     <section id="work" className="section-padding px-6">
       <div className="content-width scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-4">
-          How I Help
+          Where I Can Be Most Useful
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 text-balance">
           Support that starts with understanding, not selling.
         </h2>
 
-        <p className="prose-editorial mb-12">I don't offer fixed packages or methodologies. Instead, I work with you to understand what's actually going on then figure out together what kind of support would help.
+        <p className="prose-editorial mb-12">I do not offer fixed packages or predefined methodologies. Every situation is different.
 
-        </p>
+Instead, I work with leaders to understand what is actually happening beneath the surface and then decide together what kind of support would be most useful.</p>
 
         <div className="space-y-8">
           {approaches.map((approach, index) =>
@@ -45,10 +45,7 @@ const WorkSection = () => {
             key={index}
             className="group p-6 -mx-6 rounded-lg hover:bg-card transition-colors duration-300">
 
-              <div className="flex items-center gap-4">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 text-accent flex items-center justify-center text-sm font-medium">
-                  {index + 1}
-                </span>
+              <div className="flex items-start gap-4 justify-center text-center">
                 <div>
                   <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2 group-hover:text-accent transition-colors">
                     {approach.title}
@@ -64,10 +61,10 @@ const WorkSection = () => {
 
         <div className="mt-16 p-8 bg-card rounded-lg border border-border">
           <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
-            The shape of work
+            The shape of the work
           </h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Most engagements start with a short, focused burst—a few conversations to understand the situation. From there, we decide together whether ongoing support makes sense. This might look like retained advisory, fractional involvement, or something more bespoke.
+            Most engagements start with a short, focused burst. A few conversations to understand the situation. From there, we decide together whether ongoing support makes sense. This might look like retained advisory, fractional involvement, or something more bespoke.
           </p>
           <a
             href="#contact"
