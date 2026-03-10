@@ -72,11 +72,12 @@ const Header = () => {
 
       {/* Fullscreen overlay menu - outside header to avoid clipping */}
       <div
-        className={`fixed inset-0 z-[55] bg-background/98 backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
+        className={`fixed inset-0 z-[55] bg-background/90 backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
           isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
+        onClick={() => setIsOpen(false)}
       >
-        <nav className="flex flex-col items-center gap-10">
+        <nav className="flex flex-col items-center gap-10" onClick={(e) => e.stopPropagation()}>
           {navItems.map((item) => (
             <button
               key={item.id}
