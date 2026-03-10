@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin } from "lucide-react";
 import logo from "../assets/reset54-logo.svg";
 
 const navItems = [
@@ -36,6 +36,15 @@ const Header = () => {
       }`}
     >
       <div className="container max-w-5xl mx-auto px-6 flex items-center justify-center relative">
+        {/* Hamburger button - left */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="absolute left-6 z-50 p-2 text-foreground hover:text-muted-foreground transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
         <a
           href="#"
           className="flex items-center hover:opacity-80 transition-opacity"
@@ -47,14 +56,16 @@ const Header = () => {
           <img src={logo} alt="Reset54" className="h-16 w-auto" />
         </a>
 
-        {/* Hamburger button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="absolute right-6 z-50 p-2 text-foreground hover:text-muted-foreground transition-colors"
-          aria-label="Toggle menu"
+        {/* LinkedIn icon - right */}
+        <a
+          href="https://www.linkedin.com/in/peterhay/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute right-6 p-2 text-foreground hover:text-muted-foreground transition-colors"
+          aria-label="LinkedIn"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+          <Linkedin size={24} />
+        </a>
       </div>
 
       {/* Fullscreen overlay menu */}
