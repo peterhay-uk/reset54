@@ -9,7 +9,7 @@ const ContactSection = () => {
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">
-          If this resonates, let's talk.
+          If this resonates, let's talk
         </h2>
 
         <p className="text-lg text-primary-foreground/80 max-w-lg mx-auto mb-10">
