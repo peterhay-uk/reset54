@@ -35,7 +35,7 @@ const Header = () => {
           : "bg-transparent py-6"
       }`}
     >
-      <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between">
+      <div className="container max-w-5xl mx-auto px-6 flex items-center justify-center relative">
         <a
           href="#"
           className="flex items-center hover:opacity-80 transition-opacity"
@@ -50,7 +50,7 @@ const Header = () => {
         {/* Hamburger button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="relative z-50 p-2 text-foreground hover:text-muted-foreground transition-colors"
+          className="absolute right-6 z-50 p-2 text-foreground hover:text-muted-foreground transition-colors"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
