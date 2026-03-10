@@ -13,7 +13,7 @@ const WorkSection = () => {
     "A clearer sense of what matters and where to focus next"
   },
   {
-    title: "When teams are working hard but progress is slow",
+    title: <>When teams are working hard<br className="md:hidden" /> but progress is slow</>,
     description:
     "Momentum restored without increasing pressure"
   },
