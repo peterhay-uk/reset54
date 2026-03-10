@@ -32,7 +32,7 @@ const WorkSection = () => {
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 text-balance">
-          Support that starts with understanding, not selling.
+          Support that starts with understanding, not selling
         </h2>
 
         <p className="prose-editorial mb-12">I do not offer fixed packages or predefined methodologies. Every situation is different.
