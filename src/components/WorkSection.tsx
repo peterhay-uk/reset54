@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 
 const WorkSection = () => {
-  const approaches = [
+  const approaches: { title: ReactNode; description: string }[] = [
   {
     title: "When the problem is not yet clear",
     description:
