@@ -28,49 +28,51 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-sm border-b border-border py-4"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <div className="container max-w-5xl mx-auto px-6 flex items-center justify-center relative">
-        {/* Hamburger button - left */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="absolute left-6 z-50 p-2 text-foreground hover:text-muted-foreground transition-colors"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-background/95 backdrop-blur-sm border-b border-border py-4"
+            : "bg-transparent py-6"
+        }`}
+      >
+        <div className="container max-w-5xl mx-auto px-6 flex items-center justify-center relative">
+          {/* Hamburger button - left */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="absolute left-6 z-[60] p-2 text-foreground hover:text-muted-foreground transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
 
-        <a
-          href="#"
-          className="flex items-center hover:opacity-80 transition-opacity"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          <img src={logo} alt="Reset54" className="h-16 w-auto" />
-        </a>
+          <a
+            href="#"
+            className="flex items-center hover:opacity-80 transition-opacity"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <img src={logo} alt="Reset54" className="h-16 w-auto" />
+          </a>
 
-        {/* LinkedIn icon - right */}
-        <a
-          href="https://www.linkedin.com/in/peterhay/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute right-6 p-2 text-foreground hover:text-muted-foreground transition-colors"
-          aria-label="LinkedIn"
-        >
-          <Linkedin size={24} />
-        </a>
-      </div>
+          {/* LinkedIn icon - right */}
+          <a
+            href="https://www.linkedin.com/in/peterhay/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute right-6 p-2 text-foreground hover:text-muted-foreground transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={24} />
+          </a>
+        </div>
+      </header>
 
-      {/* Fullscreen overlay menu */}
+      {/* Fullscreen overlay menu - outside header to avoid clipping */}
       <div
-        className={`fixed inset-0 z-40 bg-background/98 backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
+        className={`fixed inset-0 z-[55] bg-background/98 backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
           isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -86,7 +88,7 @@ const Header = () => {
           ))}
         </nav>
       </div>
-    </header>
+    </>
   );
 };
 
