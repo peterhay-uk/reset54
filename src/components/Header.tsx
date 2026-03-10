@@ -23,7 +23,11 @@ const Header = () => {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (element) {
+      const headerHeight = 80;
+      const top = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
     setIsOpen(false);
   };
 
