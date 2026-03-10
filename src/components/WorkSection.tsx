@@ -47,8 +47,12 @@ Instead, I work with leaders to understand what is actually happening beneath th
 
               <div className="flex items-start gap-4 justify-center text-center">
                 <div>
-                  <h3 className="font-serif text-xl md:text-2xl text-accent mb-2">
-                    {approach.title}
+                  <h3 className="font-serif text-xl md:text-2xl text-accent mb-2"
+                    dangerouslySetInnerHTML={approach.mobileTitle ? {
+                      __html: `<span class="hidden md:inline">${approach.title}</span><span class="md:hidden">${approach.mobileTitle}</span>`
+                    } : undefined}
+                  >
+                    {approach.mobileTitle ? undefined : approach.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {approach.description}
