@@ -7,7 +7,7 @@ const AboutSection = () => {
         </span>
         
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-10 text-balance">
-          Peter Hay. Two decades working alongside leaders navigating complex change.
+          For over 20 years, Peter Hay has worked alongside leaders navigating complex change.
         </h2>
         
         <div className="prose-editorial space-y-6">
