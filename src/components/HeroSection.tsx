@@ -1,7 +1,7 @@
 import RotatingText from "./RotatingText";
 
 const HERO_CAPTIONS = [
-  "Sense-making across complexity",
+  "Simplicity over complexity",
   "Clarity over noise",
   "Progress over theatre",
 ];
@@ -17,21 +17,23 @@ const HeroSection = () => {
         </div>
         
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground text-balance leading-[1.1] animate-fade-up-delay">
-          I help leaders reset direction and pace when pushing harder has stopped working.
+          I help senior leaders reset direction when pushing harder no longer works
         </h1>
         
-        <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2">
+        <p className="font-serif text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mt-6 animate-fade-up-delay">
+          Untangling stalled products, teams, and strategies
+        </p>
+        
+        <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>
           <RotatingText
             captions={HERO_CAPTIONS}
             interval={3500}
             fadeDuration={500}
             showUnderline
+            className="hero-rotating-text"
           />
-        </p>
-        
-        <div className="mt-12 flex items-center justify-center gap-4 animate-fade-up-delay-2">
-          <div className="accent-line" />
         </div>
+        
       </div>
     </section>
   );

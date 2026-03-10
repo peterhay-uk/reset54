@@ -180,6 +180,68 @@
     transform: scaleX(1);
   }
 
+  .rotating-text-underline::after {
+    display: none !important;
+  }
+
+  .rotating-text-underline *::after {
+    display: none !important;
+  }
+
+  .rotating-text-underline::before {
+    display: none !important;
+  }
+
+  .rotating-text-underline *::before {
+    display: none !important;
+  }
+
+  /* Remove all underlines from hero section */
+  .animate-fade-up-delay-2 * {
+    text-decoration: none !important;
+  }
+
+  .animate-fade-up-delay-2 *::after {
+    display: none !important;
+  }
+
+  .animate-fade-up-delay-2 *::before {
+    display: none !important;
+  }
+
+  /* Specific hero text overrides */
+  .hero-text-container {
+    text-decoration: none !important;
+  }
+
+  .hero-text-container * {
+    text-decoration: none !important;
+  }
+
+  .hero-text-container *::after {
+    display: none !important;
+  }
+
+  .hero-text-container *::before {
+    display: none !important;
+  }
+
+  .hero-rotating-text {
+    text-decoration: none !important;
+  }
+
+  .hero-rotating-text * {
+    text-decoration: none !important;
+  }
+
+  .hero-rotating-text *::after {
+    display: none !important;
+  }
+
+  .hero-rotating-text *::before {
+    display: none !important;
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(0);

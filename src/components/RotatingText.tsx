@@ -31,20 +31,27 @@ const RotatingText = ({
   }, [captions.length, interval, fadeDuration]);
 
   return (
-    <span className={`relative inline-block ${className}`}>
+    <span className={`relative inline-block rotating-text-underline ${className.replace('link-underline', '').trim()}`} style={{textDecoration: 'none', borderBottom: 'none', outline: 'none'}}>
       <span
-        className="transition-opacity duration-500"
+        className="transition-opacity duration-500 no-underline"
         style={{
           opacity: isVisible ? 1 : 0,
           transitionDuration: `${fadeDuration}ms`,
+          textDecoration: 'none',
+          borderBottom: 'none',
+          outline: 'none'
         }}
       >
         {captions[currentIndex]}
       </span>
       {showUnderline && (
         <span
-          className="absolute bottom-0 left-0 h-[2px] bg-accent animate-[underline-draw_0.8s_ease-out_0.5s_forwards]"
-          style={{ width: "0%" }}
+          className="absolute bottom-0 left-0 h-[2px] bg-accent"
+          style={{
+            width: isVisible ? "100%" : "0%",
+            transition: `width ${fadeDuration}ms ease-out ${fadeDuration}ms`,
+            textDecoration: 'none'
+          }}
         />
       )}
     </span>

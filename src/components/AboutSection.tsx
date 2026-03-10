@@ -1,64 +1,28 @@
 const AboutSection = () => {
-  const clients = [
-    { name: "Lloyds Bank", logo: "/src/assets/logos/logo-white-lloyds-bank.svg" },
-    { name: "Mastercard", logo: "/src/assets/logos/mastercard.svg" },
-    { name: "PepsiCo", logo: "/src/assets/logos/pepsico.svg" },
-    { name: "Mars", logo: "/src/assets/logos/mars.svg" },
-    { name: "Ordnance Survey", logo: "/src/assets/logos/ordnance-survey.svg" },
-    { name: "Virgin Atlantic", logo: "/src/assets/logos/virgin-atlantic.svg" }
-  ];
-
   return (
-    <section id="about" className="pt-16 px-6 bg-card">
+    <section id="about" className="section-padding px-6 bg-card">
       <div className="content-width scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-4">
           About
         </span>
         
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-10 text-balance">
-          Twenty years of working with leaders facing complex problems.
+          Two decades working alongside leaders navigating complex change.
         </h2>
         
         <div className="prose-editorial space-y-6">
-          <p>I've spent two decades helping senior leaders in established organisations navigate the messiness that comes with trying to do something impactful. Product launches that stalled. Teams that lost their way. Strategies that looked right on paper but felt wrong in practice.
-
-          </p>
+          <p>Over the past twenty years I have worked with senior leaders inside established organisations where something important has stalled; A product that should have launched by now but has lost momentum, 
+a team that is working hard but not moving in the right direction or a strategy that looked convincing on paper but is struggling in practice.</p>
           
-          <p>
-            The work I do sits somewhere between consulting and coaching, but isn't quite either. It's more like having a thinking partner who can move between the detail and the big picture—someone who's been close enough to real work to understand the texture of decisions, not just the frameworks.
-          </p>
+          <p>These moments rarely lack effort or intelligence. More often they lack the space to step back and see the situation clearly. My role is to provide that perspective.</p>
           
-          <p>
-            I work best with people who are already good at what they do but feel stuck. Not for lack of effort, but because more effort isn't the answer.
-          </p>
-        </div>
-        
-        <div className="mt-16 pt-16 border-t border-border bg-primary text-primary-foreground px-6" id="clients">
-          <div className="mb-6 scroll-mt-56">
-            <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4 text-center">PREVIOUS CLIENTS</span>
-            <div className="flex overflow-hidden w-full">
-              <div className="flex animate-scroll">
-                {[...clients, ...clients].map((client, index) => (
-                  <div
-                    key={`${client.name}-${index}`}
-                    className="flex-shrink-0 w-48 flex items-center justify-center mx-8"
-                  >
-                    <div className="text-center">
-                      <img 
-                        src={client.logo} 
-                        alt={client.name}
-                        className="h-48 w-auto transition-all duration-300"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <p>The work I do sits somewhere between consulting and coaching, but is not quite either. I work as a thinking partner to leaders who are responsible for making difficult things happen inside complex organisations. Someone who can move between the detail and the wider system around it. Someone close enough to the work to understand the reality of decisions, not just the frameworks used to describe them.</p>
+          
+          <p>I tend to work best with experienced leaders who are already capable and thoughtful but find themselves dealing with a situation where pushing harder is no longer the answer. In those moments, clearer thinking can unlock progress surprisingly quickly.</p>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default AboutSection;
