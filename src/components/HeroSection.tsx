@@ -8,7 +8,7 @@ const HERO_CAPTIONS = [
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-8 pb-4 md:pt-24 md:pb-16">
+    <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-6 pt-8 pb-4 md:pt-24 md:pb-16">
       <div className="content-width text-center">
         <div className="animate-fade-up">
           <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-6">
