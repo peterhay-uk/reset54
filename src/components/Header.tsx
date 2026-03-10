@@ -1,8 +1,17 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import logo from "../assets/reset54-logo.svg";
+
+const navItems = [
+  { label: "Work", id: "clients" },
+  { label: "About", id: "about" },
+  { label: "Value", id: "work" },
+  { label: "Contact", id: "contact" },
+];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +24,7 @@ const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
   };
 
   return (
@@ -34,37 +44,35 @@ const Header = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <img 
-            src={logo} 
-            alt="Reset54" 
-            className="h-16 w-auto"
-          />
+          <img src={logo} alt="Reset54" className="h-16 w-auto" />
         </a>
-        <nav className="flex items-center gap-8">
-          <button
-            onClick={() => scrollToSection("clients")}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
-          >
-            Previously worked with
-          </button>
-          <button
-            onClick={() => scrollToSection("about")}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
-          >
-            About
-          </button>
-          <button
-            onClick={() => scrollToSection("work")}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
-          >
-            Where I Can Be Most Useful
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
-          >
-            Get in Touch
-          </button>
+
+        {/* Hamburger button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="relative z-50 p-2 text-foreground hover:text-muted-foreground transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Fullscreen overlay menu */}
+      <div
+        className={`fixed inset-0 z-40 bg-background/98 backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col items-center gap-10">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="text-3xl font-light text-foreground hover:text-muted-foreground transition-colors tracking-wide"
+            >
+              {item.label}
+            </button>
+          ))}
         </nav>
       </div>
     </header>
