@@ -13,7 +13,7 @@ const PreviousClientsSection = () => {
   return (
     <section id="clients" className="section-padding px-6 bg-primary text-primary-foreground">
       <div className="container max-w-5xl mx-auto px-6 text-center scroll-mt-56">
-        <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">Previously worked with</span>
+        <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">Selected Clients</span>
         <div className="flex overflow-hidden w-full">
           <div className="flex animate-scroll">
             {[...clients, ...clients].map((client, index) => (
