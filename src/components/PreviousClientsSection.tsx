@@ -1,11 +1,13 @@
+import logoWhite from "../assets/logos/reset54-logo-white.svg";
+
 const PreviousClientsSection = () => {
   const clients = [
-    { name: "Lloyds Bank", logo: "/src/assets/logos/reset54-logo-white.svg" },
-    { name: "Mastercard", logo: "/src/assets/logos/reset54-logo-white.svg" },
-    { name: "PepsiCo", logo: "/src/assets/logos/reset54-logo-white.svg" },
-    { name: "Mars", logo: "/src/assets/logos/reset54-logo-white.svg" },
-    { name: "Ordnance Survey", logo: "/src/assets/logos/reset54-logo-white.svg" },
-    { name: "Virgin Atlantic", logo: "/src/assets/logos/reset54-logo-white.svg" }
+    { name: "Lloyds Bank", logo: logoWhite },
+    { name: "Mastercard", logo: logoWhite },
+    { name: "PepsiCo", logo: logoWhite },
+    { name: "Mars", logo: logoWhite },
+    { name: "Ordnance Survey", logo: logoWhite },
+    { name: "Virgin Atlantic", logo: logoWhite }
   ];
 
   return (
