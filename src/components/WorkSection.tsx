@@ -66,13 +66,6 @@ Instead, I work with leaders to understand what is actually happening beneath th
           <p className="text-muted-foreground leading-relaxed mb-6">
             Most engagements start with a short, focused burst. A few conversations to understand the situation. From there, we decide together whether ongoing support makes sense. This might look like retained advisory, fractional involvement, or something more bespoke.
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-foreground transition-colors group">
-
-            Start a conversation
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
         </div>
       </div>
     </section>);
