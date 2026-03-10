@@ -146,6 +146,11 @@
     max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
+    text-align: center; /* Center all text content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .prose-editorial {
@@ -173,6 +178,19 @@
 
   .link-underline:hover::after {
     transform: scaleX(1);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
   }
 }
 

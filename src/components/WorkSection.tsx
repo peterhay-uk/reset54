@@ -26,7 +26,7 @@ const WorkSection = () => {
 
   return (
     <section id="work" className="section-padding px-6">
-      <div className="content-width">
+      <div className="content-width scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-4">
           How I Help
         </span>
@@ -45,7 +45,7 @@ const WorkSection = () => {
             key={index}
             className="group p-6 -mx-6 rounded-lg hover:bg-card transition-colors duration-300">
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 text-accent flex items-center justify-center text-sm font-medium">
                   {index + 1}
                 </span>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "../assets/reset54-logo.svg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,13 +28,17 @@ const Header = () => {
       <div className="container max-w-5xl mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="font-serif text-xl tracking-tight text-foreground hover:text-accent transition-colors"
+          className="flex items-center hover:opacity-80 transition-opacity"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Reset54
+          <img 
+            src={logo} 
+            alt="Reset54" 
+            className="h-16 w-auto"
+          />
         </a>
         <nav className="flex items-center gap-8">
           <button
@@ -47,6 +52,12 @@ const Header = () => {
             className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
           >
             How I Help
+          </button>
+          <button
+            onClick={() => scrollToSection("clients")}
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
+          >
+            Previous Clients
           </button>
           <button
             onClick={() => scrollToSection("contact")}

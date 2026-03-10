@@ -1,0 +1,6 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="15" width="30" height="30" fill="#453C90"/>
+  <path d="M15 25 L25 25 L25 35 L15 35 Z" fill="white"/>
+  <circle cx="20" cy="30" r="2" fill="#453C90"/>
+  <text x="50" y="35" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#453C90">Ordnance Survey</text>
+</svg>
