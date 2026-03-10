@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 
 const WorkSection = () => {
-  const approaches = [
+  const approaches: { title: ReactNode; description: string }[] = [
   {
     title: "When the problem is not yet clear",
     description:
@@ -13,7 +14,7 @@ const WorkSection = () => {
     "A clearer sense of what matters and where to focus next"
   },
   {
-    title: "When teams are working hard but progress is slow",
+    title: <>When teams are working hard<br className="md:hidden" /> but progress is slow</>,
     description:
     "Momentum restored without increasing pressure"
   },
