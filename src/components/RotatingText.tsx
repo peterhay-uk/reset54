@@ -46,10 +46,13 @@ const RotatingText = ({
       </span>
       {showUnderline && (
         <span
-          className="absolute bottom-0 left-0 h-[2px] bg-accent"
+          className="absolute bottom-0 left-0 h-[2px] bg-accent origin-left"
           style={{
-            width: isVisible ? "100%" : "0%",
-            transition: `width ${fadeDuration}ms ease-out ${fadeDuration}ms`,
+            transform: isVisible ? "scaleX(1)" : "scaleX(0)",
+            transition: isVisible
+              ? `transform ${fadeDuration * 1.2}ms ease-out ${fadeDuration * 0.8}ms`
+              : `transform ${fadeDuration * 0.6}ms ease-in 0ms`,
+            width: "100%",
             textDecoration: 'none'
           }}
         />
