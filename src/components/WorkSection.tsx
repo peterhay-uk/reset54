@@ -43,11 +43,11 @@ Instead, I work with leaders to understand what is actually happening beneath th
           {approaches.map((approach, index) =>
           <div
             key={index}
-            className="group p-6 -mx-6 rounded-lg hover:bg-card transition-colors duration-300">
+            className="p-6 -mx-6 rounded-lg bg-card">
 
               <div className="flex items-start gap-4 justify-center text-center">
                 <div>
-                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2 group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-xl md:text-2xl text-accent mb-2">
                     {approach.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
