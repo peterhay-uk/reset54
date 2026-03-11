@@ -21,9 +21,13 @@ const PreviousClientsSection = () => {
         <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground">Selected Clients</span>
       </div>
       <div className="overflow-hidden w-full">
-        <div className="flex animate-scroll will-change-transform" style={{ width: 'max-content' }}>
+        <div className="flex" style={{ width: "max-content" }}>
           {[0, 1].map((loopIndex) => (
-            <div key={loopIndex} className="flex shrink-0" aria-hidden={loopIndex === 1}>
+            <div
+              key={loopIndex}
+              className="flex shrink-0 animate-marquee [transform:translate3d(0,0,0)] [backface-visibility:hidden]"
+              aria-hidden={loopIndex === 1}
+            >
               {clients.map((client) => (
                 <div
                   key={`${client.name}-${loopIndex}`}
