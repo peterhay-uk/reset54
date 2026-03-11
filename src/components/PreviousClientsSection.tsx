@@ -3,8 +3,6 @@ const logoFiles = import.meta.glob<{ default: string }>(
   { eager: true }
 );
 
-console.log("logoFiles:", logoFiles);
-
 const clients = Object.entries(logoFiles)
   .map(([path, module]) => {
     const filename = path.split("/").pop()?.replace(/^logo-/, "").replace(/\.(svg|png)$/, "") ?? "";
@@ -12,22 +10,21 @@ const clients = Object.entries(logoFiles)
       .split("-")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
-    console.log("client:", name, "logo:", module.default, "module:", module);
     return { name, logo: module.default, isPng: path.endsWith(".png") };
   })
   .sort((a, b) => a.name.localeCompare(b.name));
 
 const PreviousClientsSection = () => {
   return (
-    <section id="clients" className="section-padding px-6 text-primary-foreground bg-primary-foreground">
+    <section id="clients" className="section-padding px-6 text-primary-foreground bg-red-200">
       <div className="container max-w-5xl mx-auto px-6 text-center scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase mb-10 text-muted-foreground">Selected Clients</span>
-        <div className="flex overflow-hidden w-full">
+        <div className="flex overflow-hidden w-full border-2 border-blue-500">
           <div className="flex animate-scroll">
             {[...clients, ...clients].map((client, index) =>
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 flex items-center justify-center px-12">
+              className="flex-shrink-0 flex items-center justify-center px-12 border border-green-500">
                 <div className="text-center">
                   <img
                     src={client.logo}
