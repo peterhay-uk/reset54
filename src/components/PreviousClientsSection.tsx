@@ -1,5 +1,5 @@
 const logoFiles = import.meta.glob<{ default: string }>(
-  "../assets/logos/logo-*.{svg,png}",
+  ["../assets/logos/logo-*.svg", "../assets/logos/logo-*.png"],
   { eager: true }
 );
 
