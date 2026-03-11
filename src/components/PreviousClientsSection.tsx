@@ -20,14 +20,14 @@ const PreviousClientsSection = () => {
       <div className="container max-w-5xl mx-auto px-6 text-center scroll-mt-56 mb-10">
         <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground">Selected Clients</span>
       </div>
-      <div className="overflow-hidden w-full relative">
-        <div className="inline-flex animate-scroll will-change-transform" style={{ whiteSpace: 'nowrap' }}>
+      <div className="overflow-hidden w-full">
+        <div className="flex animate-scroll will-change-transform" style={{ width: 'max-content' }}>
           {[0, 1].map((loopIndex) => (
-            <div key={loopIndex} className="inline-flex flex-nowrap" aria-hidden={loopIndex === 1}>
+            <div key={loopIndex} className="flex shrink-0" aria-hidden={loopIndex === 1}>
               {clients.map((client) => (
                 <div
                   key={`${client.name}-${loopIndex}`}
-                  className="flex-shrink-0 inline-flex items-center justify-center px-6 md:px-12"
+                  className="shrink-0 flex items-center justify-center px-6 md:px-12"
                 >
                   <img
                     src={client.logo}
