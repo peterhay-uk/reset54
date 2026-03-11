@@ -44,7 +44,6 @@ const PreviousClientsSection = () => {
           ))}
         </div>
       </div>
-      </div>
     </section>
   );
 };
