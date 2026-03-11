@@ -1,6 +1,8 @@
+import logoBupa from "../assets/logos/logo-bupa.svg";
 import logoLloyds from "../assets/logos/logo-lloyds.svg";
 import logoMars from "../assets/logos/logo-mars.svg";
 import logoMastercard from "../assets/logos/logo-mastercard.svg";
+import logoNewsUk from "../assets/logos/logo-news-uk.svg";
 import logoOrdnanceSurvey from "../assets/logos/logo-ordnance-survey.svg";
 import logoPepsico from "../assets/logos/logo-pepsico.png";
 import logoSouthernWater from "../assets/logos/logo-southern-water.svg";
@@ -12,6 +14,8 @@ const PreviousClientsSection = () => {
   { name: "Mastercard", logo: logoMastercard },
   { name: "PepsiCo", logo: logoPepsico },
   { name: "Mars", logo: logoMars },
+  { name: "Bupa", logo: logoBupa },
+  { name: "News UK", logo: logoNewsUk },
   { name: "Ordnance Survey", logo: logoOrdnanceSurvey },
   { name: "Southern Water", logo: logoSouthernWater },
   { name: "Virgin Atlantic", logo: logoVirginAtlantic }];
