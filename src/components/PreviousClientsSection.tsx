@@ -32,7 +32,7 @@ const PreviousClientsSection = () => {
                   <img
                   src={client.logo}
                   alt={client.name}
-                  className="h-16 w-auto object-contain transition-all duration-300" />
+                  className={`w-auto object-contain transition-all duration-300 ${client.name === "PepsiCo" ? "h-24" : "h-16"}`} />
                 
                 </div>
               </div>
