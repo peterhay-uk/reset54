@@ -1,20 +1,20 @@
-import lloydsBank from "../assets/logos/lloyds-bank.svg";
-import logoWhiteLloydsBank from "../assets/logos/logo-white-lloyds-bank.svg";
-import mars from "../assets/logos/mars.svg";
-import mastercard from "../assets/logos/mastercard.svg";
-import ordnanceSurvey from "../assets/logos/ordnance-survey.svg";
-import pepsico from "../assets/logos/pepsico.svg";
-import reset54LogoWhite from "../assets/logos/reset54-logo-white.svg";
-import virginAtlantic from "../assets/logos/virgin-atlantic.svg";
+import logoLloyds from "../assets/logos/logo-lloyds.svg";
+import logoMars from "../assets/logos/logo-mars.svg";
+import logoMastercard from "../assets/logos/logo-mastercard.svg";
+import logoOrdnanceSurvey from "../assets/logos/logo-ordnance-survey.svg";
+import logoPepsico from "../assets/logos/logo-pepsico.png";
+import logoSouthernWater from "../assets/logos/logo-southern-water.svg";
+import logoVirginAtlantic from "../assets/logos/logo-virgin-atlantic.svg";
 
 const PreviousClientsSection = () => {
   const clients = [
-    { name: "Lloyds Bank", logo: logoWhiteLloydsBank },
-    { name: "Mastercard", logo: mastercard },
-    { name: "PepsiCo", logo: pepsico },
-    { name: "Mars", logo: mars },
-    { name: "Ordnance Survey", logo: ordnanceSurvey },
-    { name: "Virgin Atlantic", logo: virginAtlantic },
+    { name: "Lloyds Bank", logo: logoLloyds },
+    { name: "Mastercard", logo: logoMastercard },
+    { name: "PepsiCo", logo: logoPepsico },
+    { name: "Mars", logo: logoMars },
+    { name: "Ordnance Survey", logo: logoOrdnanceSurvey },
+    { name: "Southern Water", logo: logoSouthernWater },
+    { name: "Virgin Atlantic", logo: logoVirginAtlantic },
   ];
 
   return (
