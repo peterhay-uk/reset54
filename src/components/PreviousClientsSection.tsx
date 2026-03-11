@@ -16,15 +16,15 @@ const clients = Object.entries(logoFiles)
 
 const PreviousClientsSection = () => {
   return (
-    <section id="clients" className="section-padding px-6 text-primary-foreground bg-red-200">
+    <section id="clients" className="section-padding px-6 text-primary-foreground bg-primary-foreground">
       <div className="container max-w-5xl mx-auto px-6 text-center scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase mb-10 text-muted-foreground">Selected Clients</span>
-        <div className="flex overflow-hidden w-full border-2 border-blue-500">
+        <div className="flex overflow-hidden w-full">
           <div className="flex animate-scroll">
             {[...clients, ...clients].map((client, index) =>
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 flex items-center justify-center px-12 border border-green-500">
+              className="flex-shrink-0 flex items-center justify-center px-12">
                 <div className="text-center">
                   <img
                     src={client.logo}
