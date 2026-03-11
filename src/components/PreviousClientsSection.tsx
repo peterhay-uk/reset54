@@ -3,6 +3,8 @@ const logoFiles = import.meta.glob<{ default: string }>(
   { eager: true }
 );
 
+console.log("logoFiles:", logoFiles);
+
 const clients = Object.entries(logoFiles)
   .map(([path, module]) => {
     const filename = path.split("/").pop()?.replace(/^logo-/, "").replace(/\.(svg|png)$/, "") ?? "";
@@ -10,6 +12,7 @@ const clients = Object.entries(logoFiles)
       .split("-")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
+    console.log("client:", name, "logo:", module.default, "module:", module);
     return { name, logo: module.default, isPng: path.endsWith(".png") };
   })
   .sort((a, b) => a.name.localeCompare(b.name));
