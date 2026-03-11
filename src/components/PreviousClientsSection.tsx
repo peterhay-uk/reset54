@@ -26,7 +26,7 @@ const PreviousClientsSection = () => {
             {[...clients, ...clients].map((client, index) =>
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 w-64 flex items-center justify-center">
+              className="flex-shrink-0 flex items-center justify-center">
               
                 <div className="text-center">
                   <img
