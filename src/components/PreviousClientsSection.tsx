@@ -8,40 +8,40 @@ import logoVirginAtlantic from "../assets/logos/logo-virgin-atlantic.svg";
 
 const PreviousClientsSection = () => {
   const clients = [
-    { name: "Lloyds Bank", logo: logoLloyds },
-    { name: "Mastercard", logo: logoMastercard },
-    { name: "PepsiCo", logo: logoPepsico },
-    { name: "Mars", logo: logoMars },
-    { name: "Ordnance Survey", logo: logoOrdnanceSurvey },
-    { name: "Southern Water", logo: logoSouthernWater },
-    { name: "Virgin Atlantic", logo: logoVirginAtlantic },
-  ];
+  { name: "Lloyds Bank", logo: logoLloyds },
+  { name: "Mastercard", logo: logoMastercard },
+  { name: "PepsiCo", logo: logoPepsico },
+  { name: "Mars", logo: logoMars },
+  { name: "Ordnance Survey", logo: logoOrdnanceSurvey },
+  { name: "Southern Water", logo: logoSouthernWater },
+  { name: "Virgin Atlantic", logo: logoVirginAtlantic }];
+
 
   return (
-    <section id="clients" className="section-padding px-6 bg-primary text-primary-foreground">
+    <section id="clients" className="section-padding px-6 text-primary-foreground bg-primary-foreground">
       <div className="container max-w-5xl mx-auto px-6 text-center scroll-mt-56">
-        <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-10">Selected Clients</span>
+        <span className="inline-block text-sm tracking-widest uppercase mb-10 text-muted-foreground">Selected Clients</span>
         <div className="flex overflow-hidden w-full">
           <div className="flex animate-scroll">
-            {[...clients, ...clients].map((client, index) => (
-              <div
-                key={`${client.name}-${index}`}
-                className="flex-shrink-0 w-64 flex items-center justify-center mx-6"
-              >
+            {[...clients, ...clients].map((client, index) =>
+            <div
+              key={`${client.name}-${index}`}
+              className="flex-shrink-0 w-64 flex items-center justify-center mx-6">
+              
                 <div className="text-center">
-                  <img 
-                    src={client.logo} 
-                    alt={client.name}
-                    className="h-32 w-auto transition-all duration-300"
-                  />
+                  <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="h-32 w-auto transition-all duration-300" />
+                
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PreviousClientsSection;
