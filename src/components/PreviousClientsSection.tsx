@@ -1,26 +1,20 @@
-import logoBupa from "../assets/logos/logo-bupa.svg";
-import logoLloyds from "../assets/logos/logo-lloyds.svg";
-import logoMars from "../assets/logos/logo-mars.svg";
-import logoMastercard from "../assets/logos/logo-mastercard.svg";
-import logoNewsUk from "../assets/logos/logo-news-uk.svg";
-import logoOrdnanceSurvey from "../assets/logos/logo-ordnance-survey.svg";
-import logoPepsico from "../assets/logos/logo-pepsico.png";
-import logoSouthernWater from "../assets/logos/logo-southern-water.svg";
-import logoVirginAtlantic from "../assets/logos/logo-virgin-atlantic.svg";
+const logoFiles = import.meta.glob<{ default: string }>(
+  "../assets/logos/logo-*.(svg|png)",
+  { eager: true }
+);
+
+const clients = Object.entries(logoFiles)
+  .map(([path, module]) => {
+    const filename = path.split("/").pop()?.replace(/^logo-/, "").replace(/\.(svg|png)$/, "") ?? "";
+    const name = filename
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+    return { name, logo: module.default, isPng: path.endsWith(".png") };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 const PreviousClientsSection = () => {
-  const clients = [
-  { name: "Lloyds Bank", logo: logoLloyds },
-  { name: "Mastercard", logo: logoMastercard },
-  { name: "PepsiCo", logo: logoPepsico },
-  { name: "Mars", logo: logoMars },
-  { name: "Bupa", logo: logoBupa },
-  { name: "News UK", logo: logoNewsUk },
-  { name: "Ordnance Survey", logo: logoOrdnanceSurvey },
-  { name: "Southern Water", logo: logoSouthernWater },
-  { name: "Virgin Atlantic", logo: logoVirginAtlantic }];
-
-
   return (
     <section id="clients" className="section-padding px-6 text-primary-foreground bg-primary-foreground">
       <div className="container max-w-5xl mx-auto px-6 text-center scroll-mt-56">
@@ -31,21 +25,20 @@ const PreviousClientsSection = () => {
             <div
               key={`${client.name}-${index}`}
               className="flex-shrink-0 flex items-center justify-center">
-              
                 <div className="text-center">
                   <img
-                  src={client.logo}
-                  alt={client.name}
-                  className={`w-auto object-contain transition-all duration-300 ${client.name === "PepsiCo" ? "h-28" : "h-16"}`} />
-                
+                    src={client.logo}
+                    alt={client.name}
+                    className={`w-auto object-contain transition-all duration-300 ${client.isPng ? "h-28" : "h-16"}`}
+                  />
                 </div>
               </div>
             )}
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default PreviousClientsSection;
