@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 
 const WorkSection = () => {
-  const approaches = [
+  const approaches: { title: ReactNode; description: string }[] = [
   {
     title: "When the problem is not yet clear",
     description:
@@ -13,7 +14,7 @@ const WorkSection = () => {
     "A clearer sense of what matters and where to focus next"
   },
   {
-    title: "When teams are working hard but progress is slow",
+    title: <>When teams are working hard<br className="md:hidden" /> but progress is slow</>,
     description:
     "Momentum restored without increasing pressure"
   },
@@ -32,7 +33,7 @@ const WorkSection = () => {
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 text-balance">
-          Support that starts with understanding, not selling.
+          Support that starts with understanding, not selling
         </h2>
 
         <p className="prose-editorial mb-12">I do not offer fixed packages or predefined methodologies. Every situation is different.
@@ -43,11 +44,11 @@ Instead, I work with leaders to understand what is actually happening beneath th
           {approaches.map((approach, index) =>
           <div
             key={index}
-            className="group p-6 -mx-6 rounded-lg hover:bg-card transition-colors duration-300">
+            className="p-6 -mx-6 rounded-lg bg-card">
 
               <div className="flex items-start gap-4 justify-center text-center">
                 <div>
-                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2 group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-xl md:text-2xl text-accent mb-2">
                     {approach.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -66,13 +67,6 @@ Instead, I work with leaders to understand what is actually happening beneath th
           <p className="text-muted-foreground leading-relaxed mb-6">
             Most engagements start with a short, focused burst. A few conversations to understand the situation. From there, we decide together whether ongoing support makes sense. This might look like retained advisory, fractional involvement, or something more bespoke.
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-foreground transition-colors group">
-
-            Start a conversation
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
         </div>
       </div>
     </section>);

@@ -8,7 +8,7 @@ const HERO_CAPTIONS = [
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
+    <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-6 pt-16 pb-4 md:pt-32 md:pb-16">
       <div className="content-width text-center">
         <div className="animate-fade-up">
           <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-6">
@@ -21,7 +21,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="font-serif text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mt-6 animate-fade-up-delay">
-          Untangling stalled products, teams, and strategy
+          Untangling stalled products,<br className="md:hidden" /> teams, and initiatives
         </p>
         
         <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>
