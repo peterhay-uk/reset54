@@ -21,7 +21,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="font-serif text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mt-6 animate-fade-up-delay">
-          Untangling stalled products,<br className="md:hidden" /> teams, and initiatives
+          Untangling complex problems<br />with a calm and pragmatic authority
         </p>
         
         <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>
@@ -29,7 +29,6 @@ const HeroSection = () => {
             captions={HERO_CAPTIONS}
             interval={3500}
             fadeDuration={500}
-            showUnderline
             className="hero-rotating-text"
           />
         </div>
