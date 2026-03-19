@@ -21,12 +21,15 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerHeight = 80;
-      const top = element.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scrollTo({ top, behavior: "smooth" });
+  const scrollToSection = (item: { id: string }) => {
+    // Handle internal anchor scrolling
+    if (item.id) {
+      const element = document.getElementById(item.id);
+      if (element) {
+        const headerHeight = 80;
+        const top = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
     }
     setIsOpen(false);
   };
@@ -84,8 +87,8 @@ const Header = () => {
         <nav className="flex flex-col items-center gap-10" onClick={(e) => e.stopPropagation()}>
           {navItems.map((item) => (
             <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
+              key={item.id || item.href}
+              onClick={() => scrollToSection(item)}
               className="text-3xl font-light text-foreground hover:text-muted-foreground transition-colors tracking-wide"
             >
               {item.label}

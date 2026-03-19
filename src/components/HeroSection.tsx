@@ -16,13 +16,9 @@ const HeroSection = () => {
           </span>
         </div>
         
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground text-balance leading-[1.1] animate-fade-up-delay">
-          Helping senior leaders reset direction when pushing harder no longer works
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-[4.2rem] lg:text-[4.2rem] text-foreground text-balance leading-[1.1] animate-fade-up-delay">
+          Helping senior leaders reset complex challenges with calm conviction
         </h1>
-        
-        <p className="font-serif text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mt-6 animate-fade-up-delay">
-          Untangling complex problems<br />with a calm and pragmatic authority
-        </p>
         
         <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>
           <RotatingText

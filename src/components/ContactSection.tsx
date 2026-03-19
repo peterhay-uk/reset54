@@ -5,7 +5,7 @@ const ContactSection = () => {
     <section id="contact" className="section-padding px-6 bg-primary text-primary-foreground">
       <div className="content-width text-center scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">
-          Get in Touch
+          Please Get in Touch
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">
@@ -23,10 +23,6 @@ const ContactSection = () => {
           <Mail className="w-5 h-5" />
           peter.hay@reset54.co.uk
         </a>
-
-        <p className="mt-8 text-sm text-primary-foreground/50">
-          I will respond within 24 hours.
-        </p>
       </div>
     </section>);
 
