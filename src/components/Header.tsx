@@ -54,12 +54,8 @@ const Header = () => {
           </button>
 
           <a
-            href="#"
+            href="/"
             className="flex items-center hover:opacity-80 transition-opacity"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
           >
             <img src={logo} alt="Reset54" className="h-16 w-auto" />
           </a>
