@@ -1,65 +1,59 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
-import { Mail } from "lucide-react";
+import { Mail, Users, Settings, Database, Clock, ArrowRight, RefreshCw, Target, Compass } from "lucide-react";
+import RotatingText from "../components/RotatingText";
 import pepsiCoLogo from "../assets/logos/logo-pepsico.png";
 import mastercardLogo from "../assets/logos/logo-mastercard.svg";
 import lloydsLogo from "../assets/logos/logo-lloyds.svg";
 import southernWaterLogo from "../assets/logos/logo-southern-water.svg";
+import calorGasLogo from "../assets/logos/logo-calor-gas.svg";
+
+const HERO_CAPTIONS = [
+  "Simplicity over complexity",
+  "Clarity over noise",
+  "Progress over theatre",
+];
 
 const CaseStudies = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Header />
       <main>
-        {/* Hero Section */}
-        <section className="section-padding px-6">
+        {/* Project Highlights Section */}
+        <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-6 pt-16 pb-4 md:pt-32 md:pb-16">
           <div className="content-width text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-foreground text-balance leading-[1.1] mb-8">
-              Untangling complex problems when progress stalls
+            <div className="animate-fade-up">
+              <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-6">
+                Project Highlights
+              </span>
+            </div>
+            
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-[4.2rem] lg:text-[4.2rem] text-foreground text-balance leading-[1.1] animate-fade-up-delay">
+              How I untangle complex problems when progress stalls
             </h1>
             
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg md:text-xl text-muted-foreground mb-4">
-                Most of the work I'm brought into isn't starting from scratch.
-                It's when something important is already in motion, but no longer working.
-              </p>
-              
-              <p className="text-lg md:text-xl text-muted-foreground mb-4">
-                Teams are pushing harder. Complexity is increasing. Progress is slowing.
-              </p>
-              
-              <p className="text-lg md:text-xl text-muted-foreground">
-                These are examples of where I've helped leaders reset direction, simplify systems and get things moving again.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Qualification Strip */}
-        <section className="py-12 px-6 bg-muted/30">
-          <div className="content-width">
-            <p className="text-center text-muted-foreground mb-6">
-              This work typically sits with senior leaders responsible for outcomes across product, operations or transformation where:
-            </p>
-            <div className="max-w-2xl mx-auto space-y-2">
-              <p className="text-center text-muted-foreground">• Multiple teams are involved</p>
-              <p className="text-center text-muted-foreground">• The problem is systemic, not isolated</p>
-              <p className="text-center text-muted-foreground">• Progress matters commercially</p>
+            <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>
+              <RotatingText
+                captions={HERO_CAPTIONS}
+                interval={3500}
+                fadeDuration={500}
+                className="hero-rotating-text"
+              />
             </div>
           </div>
         </section>
 
         {/* Case Studies */}
-        <section className="section-padding px-6">
+        <section className="section-padding px-6 bg-white">
           <div className="content-width max-w-4xl">
             
             {/* PepsiCo */}
             <div className="mb-20 pb-20 border-b border-border">
+              <img src={pepsiCoLogo} alt="PepsiCo" className="h-20 md:h-28 w-auto mb-4 opacity-70 mx-auto object-contain" />
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                When critical data exists but no one trusts or can use it
+                What if critical data exists but no one trusts or can use it?
               </h2>
-              <img src={pepsiCoLogo} alt="PepsiCo" className="h-16 w-auto mb-4 opacity-70 mx-auto object-contain" />
               <p className="italic text-muted-foreground mb-6">
                 Data was everywhere, but fragmentation, duplication and mistrust made it unusable.
               </p>
@@ -99,10 +93,10 @@ const CaseStudies = () => {
 
             {/* Mastercard */}
             <div className="mb-20 pb-20 border-b border-border">
+              <img src={mastercardLogo} alt="Mastercard" className="h-10 md:h-16 w-auto mb-4 opacity-70 mx-auto" />
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                When product decisions slow to a crawl across a global organisation
+                What if product decisions slow to a crawl across a global organisation?
               </h2>
-              <img src={mastercardLogo} alt="Mastercard" className="h-12 w-auto mb-4 opacity-70 mx-auto" />
               <p className="italic text-muted-foreground mb-6">
                 Growth created complexity. Complexity slowed decisions. No one owned the system.
               </p>
@@ -142,10 +136,10 @@ const CaseStudies = () => {
 
             {/* Lloyds Commercial Bank */}
             <div className="mb-20 pb-20 border-b border-border">
+              <img src={lloydsLogo} alt="Lloyds Commercial Bank" className="h-10 md:h-16 w-auto mb-4 opacity-70 mx-auto" />
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                When onboarding becomes so complex it takes 6 months to complete
+                What if complexity means onboarding takes 6 months to complete?
               </h2>
-              <img src={lloydsLogo} alt="Lloyds Commercial Bank" className="h-12 w-auto mb-4 opacity-70 mx-auto" />
               <p className="italic text-muted-foreground mb-6">
                 Compliance, legacy systems and siloed teams created a process no one could fix end-to-end.
               </p>
@@ -185,10 +179,10 @@ const CaseStudies = () => {
 
             {/* Southern Water */}
             <div className="mb-20 pb-20 border-b border-border">
+              <img src={southernWaterLogo} alt="Southern Water" className="h-10 md:h-16 w-auto mb-4 opacity-70 mx-auto" />
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                When legacy systems and slow decisions start costing millions
+                What if legacy systems and slow decisions start costing millions?
               </h2>
-              <img src={southernWaterLogo} alt="Southern Water" className="h-12 w-auto mb-4 opacity-70 mx-auto" />
               <p className="italic text-muted-foreground mb-6">
                 Ageing infrastructure and linear processes created risk and delay.
               </p>
@@ -228,10 +222,10 @@ const CaseStudies = () => {
 
             {/* Calor Gas */}
             <div className="mb-20 pb-20 border-b border-border">
+              <img src={calorGasLogo} alt="Calor Gas" className="h-10 md:h-16 w-auto mb-4 opacity-70 mx-auto" />
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                When a core customer process hasn't changed in decades
+                What if a core customer process hasn't changed in decades?
               </h2>
-              <p className="text-muted-foreground mb-4 opacity-70">Calor Gas</p>
               <p className="italic text-muted-foreground mb-6">
                 A legacy process persisted because it worked operationally, not for customers.
               </p>
@@ -271,10 +265,10 @@ const CaseStudies = () => {
 
             {/* The Big Issue */}
             <div className="mb-20">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                When frontline teams lack clarity, consistency and confidence
-              </h2>
               <p className="text-muted-foreground mb-4 opacity-70">The Big Issue</p>
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
+                What if frontline teams lack clarity, consistency and confidence?
+              </h2>
               <p className="italic text-muted-foreground mb-6">
                 Mission-led organisations drift when frontline experience and strategy fall out of sync.
               </p>
@@ -316,36 +310,85 @@ const CaseStudies = () => {
 
         {/* Closing Section */}
         <section className="py-16 px-6 bg-muted/30">
-          <div className="content-width max-w-3xl text-center">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8">
-              When this kind of work is useful
-            </h2>
-            <div className="space-y-3">
-              <p className="text-muted-foreground">• Progress has slowed despite capable teams</p>
-              <p className="text-muted-foreground">• The problem spans multiple functions</p>
-              <p className="text-muted-foreground">• No clear ownership</p>
-              <p className="text-muted-foreground">• Previous attempts haven't worked</p>
+          <div className="content-width max-w-6xl text-center">
+            <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-12">
+              THE COMMON THREAD
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-card p-6 rounded-lg border">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Users className="w-8 h-8 text-accent" />
+                  <p className="font-serif text-lg text-foreground leading-relaxed">
+                    Complex problems that span multiple teams and functions
+                  </p>
+                </div>
+              </div>
+              <div className="bg-card p-6 rounded-lg border">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Settings className="w-8 h-8 text-accent" />
+                  <p className="font-serif text-lg text-foreground leading-relaxed">
+                    Legacy systems and processes that no longer serve modern needs
+                  </p>
+                </div>
+              </div>
+              <div className="bg-card p-6 rounded-lg border">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Database className="w-8 h-8 text-accent" />
+                  <p className="font-serif text-lg text-foreground leading-relaxed">
+                    Data fragmentation and loss of trust in existing information
+                  </p>
+                </div>
+              </div>
+              <div className="bg-card p-6 rounded-lg border">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Clock className="w-8 h-8 text-accent" />
+                  <p className="font-serif text-lg text-foreground leading-relaxed">
+                    Decision-making bottlenecks that slow commercial progress
+                  </p>
+                </div>
+              </div>
+              <div className="bg-card p-6 rounded-lg border">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <Compass className="w-8 h-8 text-accent" />
+                  <p className="font-serif text-lg text-foreground leading-relaxed">
+                    Frontline teams disconnected from strategic direction
+                  </p>
+                </div>
+              </div>
+              <div className="bg-card p-6 rounded-lg border">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <RefreshCw className="w-8 h-8 text-accent" />
+                  <p className="font-serif text-lg text-foreground leading-relaxed">
+                    Previous attempts at change that haven't delivered results
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* Please Get in Touch Section */}
         <section className="section-padding px-6 bg-primary text-primary-foreground">
           <div className="content-width text-center">
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              If you're dealing with something that should be moving, but isn't:
+            <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">
+              Please Get in Touch
+            </span>
+
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">
+              If this resonates, let's talk
+            </h2>
+
+            <p className="text-lg text-primary-foreground/80 max-w-lg mx-auto mb-10">
+              A first conversation is just that, a chance to understand each other and see if there's a fit. No pressure, no sales pitch.
             </p>
-            
-            <Button
-              size="lg"
-              className="bg-primary-foreground text-primary hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
-              asChild
+
+            <a
+              className="inline-flex items-center gap-3 px-8 py-4 bg-primary-foreground text-primary rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-300" 
+              href="mailto:peter.hay@reset54.co.uk"
             >
-              <a href="mailto:peter.hay@reset54.co.uk" className="inline-flex items-center gap-3">
-                <Mail className="w-5 h-5" />
-                Start a conversation
-              </a>
-            </Button>
+              <Mail className="w-5 h-5" />
+              peter.hay@reset54.co.uk
+            </a>
           </div>
         </section>
       </main>

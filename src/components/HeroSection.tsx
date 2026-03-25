@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="content-width text-center">
         <div className="animate-fade-up">
           <span className="inline-block text-sm tracking-widest uppercase text-muted-foreground mb-6">
-            Independent Strategic Advisory
+            Independent Strategic Advisor
           </span>
         </div>
         
