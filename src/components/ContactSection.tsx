@@ -5,7 +5,7 @@ const ContactSection = () => {
     <section id="contact" className="section-padding px-6 bg-primary text-primary-foreground">
       <div className="content-width text-center scroll-mt-56">
         <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">
-          Please Get in Touch
+          Start a conversation
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">

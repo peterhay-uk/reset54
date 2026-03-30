@@ -1,9 +1,11 @@
 import RotatingText from "./RotatingText";
 
 const HERO_CAPTIONS = [
-  "Simplicity over complexity",
   "Clarity over noise",
+  "Momentum over motion",
   "Progress over theatre",
+  "Simplicity over complexity",
+  "Outcomes over activity",
 ];
 
 const HeroSection = () => {
@@ -17,7 +19,7 @@ const HeroSection = () => {
         </div>
         
         <h1 className="font-serif text-4xl sm:text-5xl md:text-[4.2rem] lg:text-[4.2rem] text-foreground text-balance leading-[1.1] animate-fade-up-delay">
-          Helping senior leaders reset complex challenges with calm conviction
+          Helping senior leaders reset complexity into tangible outcomes with clarity and momentum
         </h1>
         
         <div className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up-delay-2 hero-text-container" style={{textDecoration: 'none'}}>

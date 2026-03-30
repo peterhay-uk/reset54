@@ -17,15 +17,15 @@ const AboutSection = () => {
         </div>
         
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-10 text-balance text-center">
-          For over 20 years, Peter Hay has worked alongside leaders navigating complex change
+          Calm conviction in complex moments
         </h2>
         
         <div className="prose-editorial space-y-6">
-          <p>Much of that work has taken place inside established organisations where something important has stalled. A product that should have launched by now but has lost momentum. A team working hard but not moving in the right direction. A strategy that looked convincing on paper but is struggling in practice. These moments rarely lack effort or intelligence. More often they lack the space to step back and see the situation clearly. </p>
+          <p>For over 20 years, Peter Hay has worked alongside leaders navigating complex change. Much of that work has taken place inside established organisations where something important has stalled. A product that should have launched but has lost momentum. A team working hard but not moving in the right direction. A strategy that looked convincing on paper but is struggling in practice. These situations rarely lack effort or intelligence. More often, they lack the space to step back, see the system clearly, and reset with confidence.</p>
           
-          <p>My role is to provide that external perspective, working as a thinking partner to leaders who are responsible for making difficult things happen inside complex organisations. Someone who can move between the detail and the wider system around it. Close enough to the work to understand the reality of decisions, not just the frameworks used to describe them.</p>
+          <p>Peter works as a thinking partner to leaders responsible for making difficult things happen inside complex organisations. He moves comfortably between the detail and the wider system around it, close enough to understand the reality of decisions and delivery while creating the clarity needed to restore direction and momentum.</p>
           
-          <p>I work best with experienced leaders who are already capable and thoughtful but find themselves dealing with a situation where pushing harder is no longer the answer. In those moments, additional help to clarify thinking can unlock progress surprisingly quickly.</p>
+          <p>He works best with experienced leaders who are already capable and thoughtful but find themselves in situations where pushing harder is no longer the answer. In those moments, the right external perspective can quickly sharpen thinking, unlock progress, and turn complexity into tangible outcomes.</p>
         </div>
       </div>
     </section>);
