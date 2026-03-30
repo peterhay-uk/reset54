@@ -10,9 +10,11 @@ import southernWaterLogo from "../assets/logos/logo-southern-water.svg";
 import calorGasLogo from "../assets/logos/logo-calor-gas.svg";
 
 const HERO_CAPTIONS = [
-  "Simplicity over complexity",
   "Clarity over noise",
+  "Momentum over motion",
   "Progress over theatre",
+  "Simplicity over complexity",
+  "Outcomes over activity",
 ];
 
 const CaseStudies = () => {
@@ -367,11 +369,11 @@ const CaseStudies = () => {
           </div>
         </section>
 
-        {/* Please Get in Touch Section */}
+        {/* Start a conversation Section */}
         <section className="section-padding px-6 bg-primary text-primary-foreground">
           <div className="content-width text-center">
             <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">
-              Please Get in Touch
+              Start a conversation
             </span>
 
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">
