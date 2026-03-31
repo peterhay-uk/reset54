@@ -2,9 +2,9 @@ import RotatingText from "./RotatingText";
 
 const HERO_CAPTIONS = [
   "Clarity over noise",
+  "Simplicity over complexity",
   "Momentum over motion",
   "Progress over theatre",
-  "Simplicity over complexity",
   "Outcomes over activity",
 ];
 
