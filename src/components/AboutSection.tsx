@@ -21,7 +21,7 @@ const AboutSection = () => {
         </h2>
         
         <div className="prose-editorial space-y-6">
-          <p>For over 20 years, Peter Hay has worked alongside leaders navigating complex change. Much of that work has taken place inside established organisations where something important has stalled. A product that should have launched but has lost momentum. A team working hard but not moving in the right direction. A strategy that looked convincing on paper but is struggling in practice. These situations rarely lack effort or intelligence. More often, they lack the space to step back, see the system clearly, and reset with confidence.</p>
+          <p>For over 20 years, Peter Hay has worked alongside leaders navigating complex change. Much of that work has taken place inside established organisations where something important has stalled. A product that should have launched but has lost momentum. A team working hard but not moving in the right direction. A strategy that looked convincing on paper yet is struggling in practice. These situations rarely lack effort or intelligence. More often, they lack the space to step back, see the system clearly, and reset with confidence.</p>
           
           <p>Peter works as a thinking partner to leaders responsible for making difficult things happen inside complex organisations. He moves comfortably between the detail and the wider system around it, close enough to understand the reality of decisions and delivery while creating the clarity needed to restore direction and momentum.</p>
           

@@ -13,7 +13,7 @@ const ContactSection = () => {
         </h2>
 
         <p className="text-lg text-primary-foreground/80 max-w-lg mx-auto mb-10">
-          A first conversation is just that, a chance to understand each other and see if there's a fit. No pressure, no sales pitch.
+          A focused discussion to understand the challenge, pressure-test the situation, and explore whether I can help.
         </p>
 
         <a
