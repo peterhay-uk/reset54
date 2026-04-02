@@ -3,10 +3,9 @@ import { Menu, X, Linkedin } from "lucide-react";
 import logo from "../assets/reset54-logo.svg";
 
 const navItems = [
-  { label: "Work", id: "clients" },
-  { label: "About", id: "about" },
-  { label: "Value", id: "work" },
-  { label: "Contact", id: "contact" },
+  { label: "Home", id: "", href: "/" },
+  { label: "Case Studies", id: "clients", href: "/case-studies" },
+  { label: "Start a Conversation", id: "contact", href: "#contact" },
 ];
 
 const Header = () => {
@@ -21,7 +20,14 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (item: { id: string }) => {
+  const scrollToSection = (item: { id: string; href?: string }) => {
+    // Handle page navigation first
+    if (item.href) {
+      window.location.href = item.href;
+      setIsOpen(false); // Close menu when navigating to different page
+      return;
+    }
+    
     // Handle internal anchor scrolling
     if (item.id) {
       const element = document.getElementById(item.id);
@@ -31,7 +37,7 @@ const Header = () => {
         window.scrollTo({ top, behavior: "smooth" });
       }
     }
-    setIsOpen(false);
+    setIsOpen(false); // Close menu when navigating to anchor
   };
 
   return (

@@ -46,7 +46,18 @@ const CaseStudies = () => {
           </div>
         </section>
 
-        {/* Case Studies */}
+        {/* Turning complexity into momentum Section */}
+        <section className="section-padding px-6 bg-primary text-primary-foreground">
+          <div className="content-width text-center">
+            <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-12">
+              Turning complexity into momentum
+            </span>
+
+            <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto mb-10">
+              Each engagement starts in a different place: a delayed launch, a misaligned team, a strategy losing traction, or a service under pressure. What connects them is the need to step back, simplify what matters, and restore progress where complexity has started to slow decisions and delivery.
+            </p>
+          </div>
+        </section>
         <section className="section-padding px-6 bg-white">
           <div className="content-width max-w-4xl">
             
@@ -370,12 +381,11 @@ const CaseStudies = () => {
         </section>
 
         {/* Start a conversation Section */}
-        <section className="section-padding px-6 bg-primary text-primary-foreground">
+        <section id="contact" className="section-padding px-6 bg-primary text-primary-foreground">
           <div className="content-width text-center">
             <span className="inline-block text-sm tracking-widest uppercase text-primary-foreground/60 mb-4">
-              Start a conversation
+              START A CONVERSATION
             </span>
-
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">
               If this resonates, let's talk
             </h2>

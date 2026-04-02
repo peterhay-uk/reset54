@@ -12,7 +12,14 @@ const clients = Object.entries(logoFiles)
       .split("-")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
-    return { name, logo: module.default, isPng: path.endsWith(".png") };
+    
+    const isPng = path.endsWith(".png");
+    
+    return {
+      name,
+      logo: module.default,
+      isPng,
+    };
   })
   .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -28,24 +35,18 @@ const PreviousClientsSection = () => {
   useEffect(() => {
     const track = firstTrackRef.current;
     if (!track) return;
-
     const updateMarqueeMetrics = () => {
       const width = track.scrollWidth;
       if (!width) return;
-
       const pxPerSecond = window.innerWidth < MOBILE_BREAKPOINT ? MOBILE_PX_PER_SECOND : DESKTOP_PX_PER_SECOND;
       const duration = Math.max(width / pxPerSecond, 18);
-
       setMarqueeDistance(width);
       setMarqueeDuration(Number(duration.toFixed(2)));
     };
-
     updateMarqueeMetrics();
-
     const resizeObserver = new ResizeObserver(updateMarqueeMetrics);
     resizeObserver.observe(track);
     window.addEventListener("resize", updateMarqueeMetrics);
-
     return () => {
       resizeObserver.disconnect();
       window.removeEventListener("resize", updateMarqueeMetrics);
@@ -53,12 +54,11 @@ const PreviousClientsSection = () => {
   }, []);
 
   const marqueeStyle = useMemo(
-    () =>
-      ({
-        width: "max-content",
-        "--marquee-distance": `${marqueeDistance}px`,
-        "--marquee-duration": `${marqueeDuration}s`,
-      }) as CSSProperties,
+    () => ({
+      width: "max-content",
+      "--marquee-distance": `${marqueeDistance}px`,
+      "--marquee-duration": `${marqueeDuration}s`,
+    }) as CSSProperties,
     [marqueeDistance, marqueeDuration]
   );
 
@@ -96,6 +96,9 @@ const PreviousClientsSection = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="text-center mt-8">
+        <a href="/case-studies" className="hero-rotating-text">Explore case studies →</a>
       </div>
     </section>
   );
