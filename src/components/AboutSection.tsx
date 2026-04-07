@@ -25,6 +25,8 @@ const AboutSection = () => {
           
           <p>Peter works as a thinking partner to leaders responsible for making difficult things happen inside complex organisations. He moves comfortably between the detail and the wider system around it, close enough to understand the reality of decisions and delivery while creating the clarity needed to restore direction and momentum.</p>
           
+          <p>Today, that same way of working is strengthened by his practical use of AI across customer enablement, research synthesis, workshop preparation, service blueprinting, rapid prototyping, and decision support. The belief is simple: AI is most powerful when it extends experienced judgement rather than tries to replace it. Used thoughtfully, it helps teams surface patterns faster, test ideas earlier, and move from ambiguity to evidence with greater confidence.</p>
+          
           <p>He works best with experienced leaders who are already capable and thoughtful but find themselves in situations where pushing harder is no longer the answer. In those moments, the right external perspective can quickly sharpen thinking, unlock progress, and turn complexity into tangible outcomes.</p>
         </div>
       </div>
