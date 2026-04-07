@@ -13,7 +13,7 @@ const ContactSection = () => {
         </h2>
 
         <p className="text-lg text-primary-foreground/80 max-w-lg mx-auto mb-10">
-          A focused discussion to understand the challenge, pressure-test the situation, and explore whether I can help.
+          A focused discussion to understand the challenge, desired outcomes and explore whether I can help.
         </p>
 
         <a

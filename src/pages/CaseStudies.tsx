@@ -8,6 +8,8 @@ import mastercardLogo from "../assets/logos/logo-mastercard.svg";
 import lloydsLogo from "../assets/logos/logo-lloyds.svg";
 import southernWaterLogo from "../assets/logos/logo-southern-water.svg";
 import calorGasLogo from "../assets/logos/logo-calor-gas.svg";
+import fulhamPierLogo from "../assets/logos/logo-fulham-pier.svg";
+import bigIssueLogo from "../assets/logos/logo-big-issue.svg";
 
 const HERO_CAPTIONS = [
   "Clarity over noise",
@@ -95,7 +97,7 @@ const CaseStudies = () => {
                   </div>
                 </div>  
                 <p className="text-muted-foreground">
-                  <strong>My Role:</strong> Led discovery, simplified the system and built the commercial case for change.
+                  <strong>My Role:</strong> Accountable client executive, managing the delivery of £1.5m of projects across multiple workstreams.
                 </p>
                 
                 <p className="text-muted-foreground italic">
@@ -126,7 +128,7 @@ const CaseStudies = () => {
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Approach</h3>
                     <p className="text-muted-foreground">
-                      Aligned 10 global product groups, defined Materiality, Velocity, Quality metrics, created practical decision tools, and removed friction from governance processes.
+                      Aligned 12 global product groups, defined Materiality, Velocity, Quality metrics, created practical decision tools, and removed friction from governance processes.
                     </p>
                   </div>
                   
@@ -138,7 +140,7 @@ const CaseStudies = () => {
                   </div>
                 </div>  
                 <p className="text-muted-foreground">
-                  <strong>My Role:</strong> Led governance design and aligned senior stakeholders.
+                  <strong>My Role:</strong> Led programme to optimise the product development governance process for 12 global business units.
                 </p>
                 
                 <p className="text-muted-foreground italic">
@@ -162,14 +164,14 @@ const CaseStudies = () => {
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Challenge</h3>
                     <p className="text-muted-foreground">
-                      A 6 month onboarding process, fragmented systems, and poor customer experience created significant operational inefficiency and frustration.
+                      A 6 month onboarding process for new commercial customers was underpinned by fragmented systems and poor customer experience created significant operational inefficiency and frustration.
                     </p>
                   </div>
                   
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Approach</h3>
                     <p className="text-muted-foreground">
-                      Built an embedded innovation lab, introduced agile and experimentation methodologies, tested solutions with real customers, and enabled digital signatures to streamline processes.
+                      Introduced agile and lean experimentation methodologies to test solutions with real customers. Then scaled these within the newly formed embedded innovation lab, further streamlining core banking processes.
                     </p>
                   </div>
                   
@@ -181,11 +183,54 @@ const CaseStudies = () => {
                   </div>
                 </div>  
                 <p className="text-muted-foreground">
-                  <strong>My Role:</strong> Co-led the lab and embedded new behaviours.
+                  <strong>My Role:</strong> Re-engineered B2B legacy processes into agile, digital-first workflows within 100+ person internal innovation Lab.
                 </p>
                 
                 <p className="text-muted-foreground italic">
                   The breakthrough came from redesigning the system, not optimising the steps.
+                </p>
+              </div>
+            </div>
+
+            {/* Fulham Pier */}
+            <div className="mb-20 pb-20 border-b border-border">
+              <img src={fulhamPierLogo} alt="Fulham Pier" className="h-10 md:h-16 w-auto mb-4 opacity-70 mx-auto" />
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
+                What if you're designing an experience before the space exists?
+              </h2>
+              <p className="italic text-muted-foreground mb-6">
+                A complex physical transformation requiring unified digital and operational journeys.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="bg-card p-6 rounded-lg border">
+                    <h3 className="font-semibold text-foreground mb-3">Challenge</h3>
+                    <p className="text-muted-foreground">
+                      A major destination had to be designed with construction still underway. With multiple stakeholders shaping the wider vision in parallel, there was significant ambiguity around customer journeys, operational workflows and supplier priorities.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-card p-6 rounded-lg border">
+                    <h3 className="font-semibold text-foreground mb-3">Approach</h3>
+                    <p className="text-muted-foreground">
+                      Translated the destination vision into a connected end-to-end digital placemaking experience, spanning customer research, journey design, service blueprinting, platform evaluation, workflow design and product ownership.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-card p-6 rounded-lg border">
+                    <h3 className="font-semibold text-foreground mb-3">Impact</h3>
+                    <p className="text-muted-foreground">
+                      Critical day-one journeys were prioritised and third-party suppliers aligned around a shared delivery blueprint. We set the right digital foundations and created a phased roadmap to allow the destination to evolve beyond opening.
+                    </p>
+                  </div>
+                </div>  
+                <p className="text-muted-foreground">
+                  <strong>My Role:</strong> Programme management and product ownership of multi-channel digital experience across the unique venue.
+                </p>
+                
+                <p className="text-muted-foreground italic">
+                  From vision and construction complexity to a live, connected riverside destination.
                 </p>
               </div>
             </div>
@@ -205,26 +250,26 @@ const CaseStudies = () => {
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Challenge</h3>
                     <p className="text-muted-foreground">
-                      No innovation capability, slow delivery processes, and rising pressure from ageing infrastructure created significant business risk and operational constraints.
+                      No internal innovation capability, slow delivery processes, and rising pressure from ageing infrastructure created significant business risk and operational constraints as well as threat of regulatory fines.
                     </p>
                   </div>
                   
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Approach</h3>
                     <p className="text-muted-foreground">
-                      Built an innovation lab with a team of 12, designed a prioritisation model focused on high-impact problems, and fostered new ways of working.
+                      Co-designed and ran innovation capability with a team of 12. Designed a prioritisation model focused on high-impact problems, fostered new ways of working and launched live experiments within first 3 months.
                     </p>
                   </div>
                   
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Impact</h3>
                     <p className="text-muted-foreground">
-                      Achieved <strong>£25m savings</strong>, improved organisational resilience, and successfully adopted new ways of working across the business.
+                      Achieved <strong>£25m savings</strong>, improved organisational resilience, and successfully adopted new ways of working across the business. Upskilled internal team to continue innovation activity independently.
                     </p>
                   </div>
                 </div>  
                 <p className="text-muted-foreground">
-                  <strong>My Role:</strong> Led programme end-to-end and built the capability.
+                  <strong>My Role:</strong> Founding member of team that bootstrapped client innovation capability and then migrated it in-house.
                 </p>
                 
                 <p className="text-muted-foreground italic">
@@ -267,7 +312,7 @@ const CaseStudies = () => {
                   </div>
                 </div>  
                 <p className="text-muted-foreground">
-                  <strong>My Role:</strong> Led research and translated insight into action.
+                  <strong>My Role:</strong> Led customer-centric research and ideation to reimagine this legacy process from the ground up.
                 </p>
                 
                 <p className="text-muted-foreground italic">
@@ -277,13 +322,13 @@ const CaseStudies = () => {
             </div>
 
             {/* The Big Issue */}
-            <div className="mb-20">
-              <p className="text-muted-foreground mb-4 opacity-70">The Big Issue</p>
+            <div className="mb-20 pb-20 border-b border-border">
+              <img src={bigIssueLogo} alt="The Big Issue" className="h-10 md:h-16 w-auto mb-4 opacity-70 mx-auto" />
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
-                What if frontline teams lack clarity, consistency and confidence?
+                What if cashless meant excluding the people who rely on it most?
               </h2>
               <p className="italic text-muted-foreground mb-6">
-                Mission-led organisations drift when frontline experience and strategy fall out of sync.
+                Turning digital and financial barriers into a scalable vendor empowerment service
               </p>
               
               <div className="space-y-6">
@@ -291,30 +336,30 @@ const CaseStudies = () => {
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Challenge</h3>
                     <p className="text-muted-foreground">
-                      Inconsistent service delivery, lack of frontline clarity, and disconnect between teams created operational confusion and reduced effectiveness.
+                      As society became increasingly digital and cashless there was a growing risk vendors could be excluded from the financial systems needed to sell, manage earnings and build greater independence.
                     </p>
                   </div>
                   
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Approach</h3>
                     <p className="text-muted-foreground">
-                      Embedded within teams to understand context, ran workshops across the UK to gather insights, generated and tested ideas from 249 concepts down to 10 proven solutions, and built a shared journey map.
+                      Sensitively conducted ethnographic research created a clearer picture of the real barriers around confidence, online banking and digital capability. This helped translate needs into a viable service model that could scale across the vendor network.
                     </p>
                   </div>
                   
                   <div className="bg-card p-6 rounded-lg border">
                     <h3 className="font-semibold text-foreground mb-3">Impact</h3>
                     <p className="text-muted-foreground">
-                      Achieved more consistent service delivery, empowered teams to run their own improvement sprints, and created shared understanding across the entire organisation.
+                      The work created a clear, evidence-led route from social challenge to live service validation with a beta product designed and live pilot shipped to vendors in 10 weeks, enabling the most critical features to be tested in real-world scenarios.
                     </p>
                   </div>
                 </div>  
                 <p className="text-muted-foreground">
-                  <strong>My Role:</strong> Worked inside the organisation to drive and embed change.
+                  <strong>My Role:</strong> Led project research team, concept design and vendor evaluation and selection.
                 </p>
                 
                 <p className="text-muted-foreground italic">
-                  Real change came from the people closest to the problem.
+                  From exclusion risk to a scalable pathway for vendor independence.
                 </p>
               </div>
             </div>
@@ -391,7 +436,7 @@ const CaseStudies = () => {
             </h2>
 
             <p className="text-lg text-primary-foreground/80 max-w-lg mx-auto mb-10">
-              A focused discussion to understand the challenge, pressure-test the situation, and explore whether I can help.
+              A focused discussion to understand the challenge, desired outcomes and explore whether I can help.
             </p>
 
             <a
