@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
@@ -22,6 +23,14 @@ const HERO_CAPTIONS = [
 const CaseStudies = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <Helmet>
+        <title>Project highlights | Peter Hay | Reset54</title>
+        <meta name="description" content="Case studies from PepsiCo, Mastercard, Lloyds, Southern Water and more – how Peter Hay untangles complex problems and restores progress when it has stalled." />
+        <link rel="canonical" href="https://www.reset54.co.uk/case-studies" />
+        <meta property="og:title" content="Project highlights | Peter Hay | Reset54" />
+        <meta property="og:description" content="Case studies from PepsiCo, Mastercard, Lloyds, Southern Water and more – how Peter Hay untangles complex problems and restores progress when it has stalled." />
+        <meta property="og:url" content="https://www.reset54.co.uk/case-studies" />
+      </Helmet>
       <Header />
       <main>
         {/* Project Highlights Section */}
