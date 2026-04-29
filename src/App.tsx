@@ -7,6 +7,10 @@ import { Analytics } from "@vercel/analytics/react";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
+import AiReadinessAssessment from "./pages/AiReadinessAssessment";
+import TermsOfUse from "./pages/TermsOfUse";
+import Privacy from "./pages/Privacy";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -17,10 +21,19 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter
+        future={{
+          v7_startTransition: true,
+          v7_relativeSplatPath: true,
+        }}
+      >
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/ai-readiness-assessment" element={<AiReadinessAssessment />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/cookies" element={<Cookies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
