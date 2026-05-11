@@ -7,6 +7,7 @@ const Footer = () => {
   const navItems = [
     { label: "Home", id: "", href: "/" },
     { label: "Case Studies", id: "", href: "/case-studies" },
+    { label: "AI Assessment", id: "", href: "/ai-readiness-assessment" },
   ];
 
   const scrollToSection = (item: { id: string }) => {
@@ -130,7 +131,7 @@ const Footer = () => {
               © {currentYear} Reset54 Ltd. All rights reserved.
             </p>
             <p>
-              Registered in England and Wales · Company No. 17001910
+              Registered in England and Wales · Company No. 17001910 · ICO ZC134688
             </p>
           </div>
         </div>
