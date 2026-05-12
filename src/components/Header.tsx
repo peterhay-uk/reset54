@@ -5,7 +5,7 @@ import logo from "../assets/reset54-logo.svg";
 const navItems = [
   { label: "Home", id: "", href: "/" },
   { label: "Case Studies", id: "clients", href: "/case-studies" },
-  { label: "AI Assessment", id: "", href: "/ai-readiness-assessment" },
+  { label: "AI Readiness Assessment", id: "", href: "/ai-readiness-assessment" },
   { label: "Start a Conversation", id: "contact", href: "#contact" },
 ];
 
