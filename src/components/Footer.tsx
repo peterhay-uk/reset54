@@ -7,7 +7,7 @@ const Footer = () => {
   const navItems = [
     { label: "Home", id: "", href: "/" },
     { label: "Case Studies", id: "", href: "/case-studies" },
-    { label: "AI Assessment", id: "", href: "/ai-readiness-assessment" },
+    { label: "AI Readiness Assessment", id: "", href: "/ai-readiness-assessment" },
   ];
 
   const scrollToSection = (item: { id: string }) => {
